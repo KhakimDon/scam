@@ -1,0 +1,86 @@
+@import url('../fonts/index.css');
+@import url('../icomoon/style.css');
+@import url('./_toastification.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    .fade-enter-active {
+        @apply transition-300
+    }
+
+    .fade-leave-active {
+        transition: all 0.2s ease-out;
+    }
+
+    .fade-enter-from,
+    .fade-leave-to {
+        opacity: 0;
+    }
+}
+
+@layer utilities {
+    /* Transition */
+    .transition-300 {
+        @apply transition-all duration-300;
+    }
+
+    .transition-200 {
+        @apply transition-all duration-200;
+    }
+
+    /* Position */
+    .absolute-x {
+        @apply absolute -translate-x-1/2 left-1/2;
+    }
+
+    .absolute-y {
+        @apply absolute -translate-y-1/2 top-1/2;
+    }
+
+    .absolute-center {
+        @apply absolute-x absolute-y;
+    }
+
+    /* Flex */
+    .flex-y-center {
+        @apply flex items-center;
+    }
+
+    .flex-x-center {
+        @apply flex justify-center;
+    }
+
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .flex-center-between {
+        @apply flex justify-between items-center;
+    }
+
+    .flex-between {
+        @apply flex justify-between;
+    }
+}
+
+@layer components {
+    .after-border {
+        @apply relative after:absolute after:inset-0 after:rounded-full after:border after:border-solid after:border-white/15
+    }
+
+    .sidebar-circle-gradient {
+        @apply absolute top-[77px] left-0 w-full h-[620px] before:absolute before:left-0 before:top-[-50px] before:h-[620px] before:w-full z-[1] before:z-0 before:bg-no-repeat before:bg-cover;
+    }
+
+    .separator {
+        @apply h-px bg-white-1 my-1
+    }
+
+    .status {
+        @apply px-2 py-1 rounded-md
+    }
+}

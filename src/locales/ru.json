@@ -1,0 +1,22 @@
+{
+  "menu": {
+    "sidebar": {
+      "main": "Главная"
+    },
+    "breadcrumb": {
+      "home": "Главная"
+    }
+  },
+  "form": {
+    "pagination": {
+      "show": "Показать"
+    },
+    "__comment": "Please, make it structured."
+  },
+  "common": {
+  },
+  "button": {
+  },
+  "toast": {
+  }
+}
