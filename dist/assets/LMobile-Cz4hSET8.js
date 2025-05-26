@@ -1,0 +1,1 @@
+import{_ as o,f as s,g as t,o as c}from"./index-Bv4dlqd3.js";const n={},r={class:"bg-gray-300 min-h-screen flex-center-between flex-col"};function a(e,l){return c(),s("div",r,[t(e.$slots,"default")])}const _=o(n,[["render",a]]);export{_ as default};
