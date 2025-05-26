@@ -6,7 +6,7 @@
       </div>
       <div v-if="step == 1" class="mx-auto w-max mt-20">
         <div class="p-8 w-[400px] rounded-[8px] bg-white">
-          <h1 class="text-[#222222] text-[24px] font-[700]">Заявка на обучения</h1>
+          <h1 class="text-[#222222] text-[24px] font-[700]">Оплата за Контракт</h1>
           <FormInput v-model="FName" placeholder="Ваше имя" class="!bg-white mt-4 !border-[#DCE1E6] !border-[1px]"/>
           <FormInput v-model="FNumber" placeholder="Введите номер договора"
                      class="!bg-white mt-3 !border-[#DCE1E6] !border-[1px]"/>
