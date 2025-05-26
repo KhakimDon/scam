@@ -11,24 +11,15 @@
 import {computed} from "vue";
 import {useRoute} from "vue-router";
 
-import LAuth from "@/layout/LAuth.vue";
 import LDefault from "@/layout/LDefault.vue";
-import LEmpty from "@/layout/LEmpty.vue";
 import {Toaster} from "vue-sonner";
 import {TOAST_CONFIG} from "@/config";
-
-const LError = () => import("@/layout/LError.vue");
-const LMobile = () => import("@/layout/LMobile.vue");
 
 
 const route = useRoute();
 
 const layouts: Record<string, unknown> = {
   default: LDefault,
-  error: LError,
-  mobile: LMobile,
-  empty: LEmpty,
-  auth: LAuth,
 };
 const detectLayout = computed(() => {
   return layouts[route.meta.layout as string];
