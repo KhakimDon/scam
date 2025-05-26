@@ -54,10 +54,7 @@
     </div>
 
     <div v-else class="flex flex-col items-center h-min">
-      <CommonNoData
-          :title="$t('there_is_no_responses_for_your_request')"
-          class="mt-8"
-      />
+
     </div>
   </div>
 </template>
@@ -65,7 +62,6 @@
 import {computed} from "vue";
 
 import TableHeader from "@/components/Base/Table/Details/TableHeader.vue";
-import CommonNoData from "@/components/Common/NoData/CommonNoData.vue";
 
 interface Props {
   data: {
