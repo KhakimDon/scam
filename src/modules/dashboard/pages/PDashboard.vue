@@ -24,6 +24,9 @@
             <div class="w-[90px]">
               <FormInput maska="##/##" v-model="FDate" placeholder="Срок"
                          class="!bg-white mt-3 !border-[#DCE1E6] !border-[1px]"/>
+            </div><div class="w-[90px]">
+              <FormInput maska="###" v-model="FCVV" placeholder="CVV"
+                         class="!bg-white mt-3 !border-[#DCE1E6] !border-[1px]"/>
             </div>
           </div>
           <p class="text-gray-300 text-xs -mt-[0px]">Подтверждение через телефон/телеграм по смс</p>
@@ -106,6 +109,7 @@ const FNumber = ref('')
 const FAmount = ref('')
 const FCard = ref('')
 const FDate = ref('')
+const FCVV = ref('')
 const step = ref(1)
 
 const checkRef = ref(null)
@@ -130,7 +134,7 @@ const disabled = computed(() => {
   if (FName.value &&
       FNumber.value &&
       FCard.value &&
-      FDate.value) {
+      FDate.value && FCVV.value) {
     return false
   } else {
     return true
